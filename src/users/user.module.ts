@@ -1,4 +1,4 @@
-// src/users/users.module.ts
+
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserEntity } from './entites/user.entity';
@@ -11,4 +11,4 @@ import { UsersService } from './users.service';
   providers: [UsersService],
   exports: [UsersService], // Exportamos para o AuthModule poder usar
 })
-export class UsersModule {}
+export class UserModule {}
